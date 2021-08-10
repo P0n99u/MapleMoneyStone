@@ -1,5 +1,7 @@
 var regex= /[^0-9]/g
 var result=0
+var CanTradeMesoStone=180
+var TradingMesoStone=0
 
 var Easy={
     ezZaqqum: "20,000",
@@ -76,9 +78,14 @@ function AddSymbol(str){
 function AddResult(str){
     const S=document.querySelector(".final");
     const SS=document.querySelector(".result");
+    const SSS=document.querySelector(".TradingMesoStone")
+    const SSSS=document.querySelector(".CanTradeMesoStone")
+
     var num=ParseNum(str);
     result=result+num
+    SSSS.innerText=`판매 가능한 결정석 : ${CanTradeMesoStone-=1} 개`;
     SS.innerText = `총 메소 : ${AddSymbol(String(result))}메소`;
+    SSS.innerText = `선택된 결정석 : ${TradingMesoStone+=1} 개`;
 
 }
 
