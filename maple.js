@@ -4,13 +4,14 @@ var CanTradeMesoStone=180
 var TradingMesoStone=0
 
 var Easy={
-    ezZaqqum: "20,000",
-    ezCygnus: "9,112,500",
-    ezHorntail: "882,000",
-    ezVonLeon: "1,058,000",
-    ezMagnus: "722,000",
-    ezPapulatus: "684,500",
-    ezDreamWomen: "35,112,500"
+    Zaqqum: "20,000",
+    Cygnus: "9,112,500",
+    Horntail: "882,000",
+    VonLeon: "1,058,000",
+    Magnus: "722,000",
+    Papulatus: "684,500",
+    DreamWomen: "35,112,500",
+    ARKarium: "1,152,000"
 }
 
 var Normal={
@@ -27,7 +28,7 @@ var Normal={
     Magnus: "25,920,000",
     ARKarium: "25,920,000",
     ElectricLineMan: "32,512,500",
-    DeSorry: "33,800,000",
+    Demian: "33,800,000",
     DreamWomen: "40,612,500",
     SpiderFucker: "46,512,500",
     Djunkel: "52,812,500"
@@ -47,7 +48,7 @@ var Hard={
     VonLeon: "2,450,000",
     Magnus: "19,012,500",
     ElectricLineMan: "74,112,500",
-    DeSorry: "70,312,500",
+    Demian: "70,312,500",
     DreamWomen: "80,000,000",
     SpiderFucker: "88,200,000",
     Djunkel: "96,800,000",
