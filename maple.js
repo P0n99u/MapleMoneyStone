@@ -15,7 +15,7 @@ var Normal={
     Zaqqum: "612,500",
     Horntail: "1,012,500",
     VacuumCleaner: "1,250,000", //카웅
-    Pinkbean: "1,404,500",
+    PinkBean: "1,404,500",
     Papulatus: "2,664,500",
     NormalRootAbyss: "968,000", //4노말루타
     Cygnus: "14,450,000",
@@ -38,7 +38,7 @@ var Hard={
     Vellum: "21,012,500",
     Zaqqum: "16,200,000",
     Horntail: "1,352,000",
-    Pinkbean: "12,800,000",
+    PinkBean: "12,800,000",
     Papulatus: "26,450,000",
     Dusk: "92,450,000",
     Hilla: "11,250,000",
