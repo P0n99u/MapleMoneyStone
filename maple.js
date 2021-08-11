@@ -2,7 +2,6 @@ var TotalMeso=0
 var CanTradeMesoStone=180
 var TradingMesoStone=0
 
-
 var Easy={
     Zaqqum: "20,0000",
     Cygnus: "9,112,500",
@@ -25,8 +24,8 @@ var Normal={
     Dusk: "49,612,500",
     Hilla: "800,000",
     VonLeon: "1,458,000",
-    Magnus: "25,920,000",
-    ARKarium: "25,920,000",
+    Magnus: "2,592,000",
+    ARKarium: "2,520,500",
     ElectricLineMan: "32,512,500",
     Demian: "33,800,000",
     DreamWomen: "40,612,500",
@@ -34,6 +33,7 @@ var Normal={
     Djunkel: "52,812,500"
 
 }
+
 var Hard={
     Pierre: "16,200,000",
     HalfHalf: "16,200,000",
@@ -56,16 +56,19 @@ var Hard={
     BlackMage: "500,000,000",
     WingWomen: "151,250,000" //세렌
 }
+
 function RevString(str){
     var RevStr=str.split("").reverse().join("");
     return RevStr
 }
+
 function ParseNum(str){
     var regex= /[^0-9]/g
     Fstr=str.replace(regex,"");
     num=parseInt(Fstr);
     return num;
 }
+
 function AddSymbol(str){
     var RevStr=RevString(str)
     var regex= /(.{3})/g
@@ -86,12 +89,14 @@ const MaxMesoStone=document.querySelector(".CanTradeMesoStone")
     }
     WriteMeso(str,ChkReboot());
 }
+
 function WriteMeso(str,times){
     const Share=document.querySelector('input[name="Share"]').value
     var num=ParseNum(str);
     TotalMeso=TotalMeso+(num/Share)
     displayMeso(times);
 }
+
 function ChkReboot(){
     var a=document.querySelector(".Reboot")
     var b=a.querySelector('input[name="server"]').checked
@@ -101,9 +106,11 @@ function ChkReboot(){
         return 1;
     
 }
+
 function displayMeso(times){
     const TotalMesoContainer=document.querySelector(".result");
     var result=TotalMeso*times;
     result=parseInt(result);
     TotalMesoContainer.innerText = `합계 : ${AddSymbol(String(result))} 메소`;
 }
+
