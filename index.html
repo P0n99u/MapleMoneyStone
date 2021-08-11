@@ -2,16 +2,17 @@
 <head>
 </head>
 <body>
+   <script type="text/javascript" src="maple.js"></script>
    <h1>메이플 결정석 계산기</h1>
    <label>
-       <input type="radio" name="server" value="Common" checked> 일반서버
+       <input type="radio" name="server" value="Common" checked onclick="AddResult('0')"> 일반서버
     </label>
     <br>
-   <label>
-    <input type="radio" name="server" value="Reboot"> 리부트서버 < 미구현
+   <label class="Reboot">
+    <input type="radio" name="server" value="Reboot" onclick="AddResult('0')"> 리부트서버
    </label>
 
-   <script type="text/javascript" src="maple.js"></script>
+   
 
     <h2 class="Easy">Easy</h2>
     <img src="ezZaqqum.png" onclick="AddResult(Easy.Zaqqum)">

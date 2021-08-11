@@ -1,10 +1,10 @@
-var regex= /[^0-9]/g
-var result=0
+var TotalMeso=0
 var CanTradeMesoStone=180
 var TradingMesoStone=0
 
+
 var Easy={
-    Zaqqum: "20,000",
+    Zaqqum: "20,0000",
     Cygnus: "9,112,500",
     Horntail: "882,000",
     VonLeon: "1,058,000",
@@ -61,6 +61,7 @@ function RevString(str){
     return RevStr
 }
 function ParseNum(str){
+    var regex= /[^0-9]/g
     Fstr=str.replace(regex,"");
     num=parseInt(Fstr);
     return num;
@@ -77,17 +78,30 @@ function AddSymbol(str){
 }
 
 function AddResult(str){
-    const S=document.querySelector(".final");
-    const SS=document.querySelector(".result");
-    const SSS=document.querySelector(".TradingMesoStone")
-    const SSSS=document.querySelector(".CanTradeMesoStone")
-
-    var num=ParseNum(str);
-    result=result+num
-    SSSS.innerText=`판매 가능한 결정석 : ${CanTradeMesoStone-=1} 개`;
-    SS.innerText = `총 메소 : ${AddSymbol(String(result))}메소`;
-    SSS.innerText = `선택된 결정석 : ${TradingMesoStone+=1} 개`;
-
+const TradingMesoStoneContainer=document.querySelector(".TradingMesoStone")
+const MaxMesoStone=document.querySelector(".CanTradeMesoStone")
+    MaxMesoStone.innerText=`판매 가능한 결정석 : ${CanTradeMesoStone-=1} 개`;
+    TradingMesoStoneContainer.innerText = `선택된 결정석 : ${TradingMesoStone+=1} 개`;
+    WriteMeso(str,ChkReboot());
 }
-
-
+function WriteMeso(str,times){
+    var num=ParseNum(str);
+    TotalMeso=TotalMeso+num
+    displayMeso(times);
+}
+function ChkReboot(){
+    var a=document.querySelector(".Reboot")
+    var b=a.querySelector('input[name="server"]').checked
+    if(b==true)
+        return 5;
+    else
+        return 1;
+    
+}
+function displayMeso(times){
+    const TotalMesoContainer=document.querySelector(".result");
+    TotalMesoContainer.innerText = `총 메소 : ${AddSymbol(String(TotalMeso*times))}메소`;
+}
+function RadioChk(){
+    displayMeso(ChkReboot);
+}
