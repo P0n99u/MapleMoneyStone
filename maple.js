@@ -30,7 +30,8 @@ var Normal={
     Demian: "33,800,000",
     DreamWomen: "40,612,500",
     SpiderFucker: "46,512,500",
-    Djunkel: "52,812,500"
+    Djunkel: "52,812,500",
+    Slime:"34,322,000"
 
 }
 
@@ -54,7 +55,9 @@ var Hard={
     Djunkel: "96,800,000",
     StrongHilla: "110,450,000",
     BlackMage: "500,000,000",
-    WingWomen: "151,250,000" //세렌
+    WingWomen: "151,250,000", //세렌
+    Slime:"90,312,500"
+    
 }
 
 function RevString(str){
@@ -114,3 +117,6 @@ function displayMeso(times){
     TotalMesoContainer.innerText = `합계 : ${AddSymbol(String(result))} 메소`;
 }
 
+function displayText(){
+
+}
