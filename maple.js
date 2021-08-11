@@ -105,6 +105,5 @@ function displayMeso(times){
     const TotalMesoContainer=document.querySelector(".result");
     var result=TotalMeso*times;
     result=parseInt(result);
-    TotalMesoContainer.innerText = `총 메소 : ${AddSymbol(String(result))}메소`;
+    TotalMesoContainer.innerText = `합계 : ${AddSymbol(String(result))} 메소`;
 }
-
