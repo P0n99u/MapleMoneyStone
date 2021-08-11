@@ -80,9 +80,13 @@ function AddSymbol(str){
 function AddResult(str){
 const TradingMesoStoneContainer=document.querySelector(".TradingMesoStone")
 const MaxMesoStone=document.querySelector(".CanTradeMesoStone")
-    MaxMesoStone.innerText=`판매 가능한 결정석 : ${CanTradeMesoStone-=1} 개`;
-    TradingMesoStoneContainer.innerText = `선택된 결정석 : ${TradingMesoStone+=1} 개`;
+    if(str!='0'){
+        MaxMesoStone.innerText=`판매 가능한 결정석 : ${CanTradeMesoStone-=1} 개`;
+        TradingMesoStoneContainer.innerText = `선택된 결정석 : ${TradingMesoStone+=1} 개`;
+    }
+    
     WriteMeso(str,ChkReboot());
+    
 }
 function WriteMeso(str,times){
     var num=ParseNum(str);
