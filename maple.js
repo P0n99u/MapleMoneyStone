@@ -57,7 +57,7 @@ var Hard={
     BlackMage: "500,000,000",
     WingWomen: "151,250,000", //세렌
     Slime:"90,312,500"
-    
+
 }
 
 function RevString(str){
@@ -118,5 +118,5 @@ function displayMeso(times){
 }
 
 function displayText(){
-
+    
 }
