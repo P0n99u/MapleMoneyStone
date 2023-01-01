@@ -3,60 +3,61 @@ var CanTradeMesoStone=180
 var TradingMesoStone=0
 
 var Easy={
-    Zaqqum: "20,0000",
-    Cygnus: "9,112,500",
-    Horntail: "882,000",
-    VonLeon: "1,058,000",
-    Magnus: "722,000",
-    Papulatus: "684,500",
-    DreamWomen: "35,112,500",
-    ARKarium: "1,152,000"
+    Zaqqum: "119,835",
+    Cygnus: "5,493,394",
+    Horntail: "528,474",
+    VonLeon: "633,927",
+    Magnus: "432,605",
+    Papulatus: "410,135",
+    DreamWomen: "48,058,319",
+    ARKarium: "690,249"
 }
 
 var Normal={
-    Zaqqum: "612,500",
-    Horntail: "1,012,500",
-    VacuumCleaner: "1,250,000", //카웅
-    PinkBean: "1,404,500",
-    Papulatus: "2,664,500",
-    NormalRootAbyss: "968,000", //4노말루타
-    Cygnus: "14,450,000",
-    Dusk: "49,612,500",
-    Hilla: "800,000",
-    VonLeon: "1,458,000",
-    Magnus: "2,592,000",
-    ARKarium: "2,520,500",
-    ElectricLineMan: "32,512,500",
-    Demian: "33,800,000",
-    DreamWomen: "40,612,500",
-    SpiderFucker: "46,512,500",
+    Zaqqum: "366,997",
+    Horntail: "606,666",
+    VacuumCleaner: "748,970", //카웅
+    PinkBean: "841,544",
+    Papulatus: "1,596,506",
+    NormalRootAbyss: "580,003", //4노말루타
+    Cygnus: "9,039,130",
+    Dusk: "71,054,562",
+    Hilla: "479,343",
+    VonLeon: "873,601",
+    Magnus: "1,553,066",
+    ARKarium: "1,510,227",
+    ElectricLineMan: "33,942,566",
+    Demian: "35,517,853",
+    DreamWomen: "57,502,626",
+    SpiderFucker: "66,311,463",
     Djunkel: "52,812,500",
-    Slime:"34,322,000"
+    Slime:"46,935,874"
+    StrongHilla:"190,159,452",
 
 }
 
 var Hard={
-    Pierre: "16,200,000",
-    HalfHalf: "16,200,000",
-    BloodyQueen: "16,200,000",
-    Vellum: "21,012,500",
-    Zaqqum: "16,200,000",
-    Horntail: "1,352,000",
-    PinkBean: "12,800,000",
-    Papulatus: "26,450,000",
-    Dusk: "92,450,000",
-    Hilla: "11,250,000",
-    VonLeon: "2,450,000",
-    Magnus: "19,012,500",
-    ElectricLineMan: "74,112,500",
-    Demian: "70,312,500",
-    DreamWomen: "80,000,000",
-    SpiderFucker: "88,200,000",
-    Djunkel: "96,800,000",
-    StrongHilla: "110,450,000",
-    BlackMage: "500,000,000",
-    WingWomen: "151,250,000", //세렌
-    Slime:"90,312,500"
+    Pierre: "9,838,832",
+    HalfHalf: "9,818,154",
+    BloodyQueen: "9,806,780",
+    Vellum: "12,590,202",
+    Zaqqum: "9,741,285",
+    Horntail: "810,086",
+    PinkBean: "7,923,110",
+    Papulatus: "26,725,937",
+    Dusk: "160,183,752",
+    Hilla: "6,936,489",
+    VonLeon: "1,467,984",
+    Magnus: "11,579,023",
+    ElectricLineMan: "118,294,192",
+    Demian: "112,480,613",
+    DreamWomen: "131,095,655",
+    SpiderFucker: "145,038,483",
+    Djunkel: "168,609,280",
+    StrongHilla: "190,159,452",
+    BlackMage: "1,418,809,857",
+    WingWomen: "268,825,621", //세렌
+    Slime:"155,492,141"
 
 }
 
